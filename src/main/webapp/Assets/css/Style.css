@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f0fff0;
+    padding: 2%;
+    color: #2e7d32;
+}
+
+#cuerpo {
+    width: 96%;
+    margin: 0;
+}
+
+#titulo h1 {
+    text-align: center;
+    font-family: "Times New Roman", monospace;
+    font-size: 200%;
+    color: #388e3c;
+    margin-bottom: 2%;
+}
+
+#frutasInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2%;
+    margin-bottom: 3%;
+}
+
+.frutas {
+    background-color: #e8f5e9;
+    border-radius: 2%;
+    padding: 2%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2%;
+}
+
+.frutas img {
+    width: 100%;
+    border-radius: 2%;
+}
+
+.frutas div {
+    font-size: 95%;
+    text-align: justify;
+    padding: 2%;
+}
+
+input[type="number"], input[type="checkbox"], input[type="radio"] {
+    margin-top: 1%;
+}
+
+#envio {
+    background-color: #c8e6c9;
+    padding: 2%;
+    border-radius: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+#boton0 {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#b1 {
+    padding: 2%;
+    font-size: 100%;
+    background-color: #66bb6a;
+    color: white;
+    border: none;
+    border-radius: 4%;
+}
+
+#r1 {
+    text-align: center;
+    font-size: 110%;
+    margin-top: 2%;
+    color: #1b5e20;
+}
+
+#r2 {
+    text-align: center;
+    font-size: 110%;
+    margin-top: 2%;
+    color: #1b5e20;
+}
+
+#r3 {
+    text-align: center;
+    font-size: 110%;
+    margin-top: 2%;
+    color: #1b5e20;
+}
+
+
+@media (max-width: 500px) {
+    #frutasInfo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .frutas {
+        width: 90%;
+    }
+
+    #titulo h1 {
+        font-size: 150%;
+    }
+
+    #envio {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #b1 {
+        width: 50%;
+    }
+}
